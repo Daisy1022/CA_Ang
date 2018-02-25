@@ -1,0 +1,17 @@
+CREATE SCHEMA `giphy` ;
+
+CREATE TABLE `giphy`.`giphydata` (
+  `id` VARCHAR(45) NOT NULL,
+  `user` VARCHAR(45) NOT NULL,
+  `title` VARCHAR(45) NULL,
+  `type` VARCHAR(45) NULL,
+  `url` VARCHAR(300) NULL,
+  PRIMARY KEY (`id`, `user`));
+
+INSERT INTO `giphy`.`giphydata` (`id`, `user`, `title`, `type`, `url`) VALUES ('mCRJDo24UvJMA', 'Daisy', 'shiba inu dog GIF', 'gif', 'https://media3.giphy.com/media/mCRJDo24UvJMA/giphy-downsized.gif');
+INSERT INTO `giphy`.`giphydata` (`id`, `user`, `title`, `type`, `url`) VALUES ('wjK3YnjoQf0go', 'Daisy', 'weird dog GIF', 'gif', 'https://media2.giphy.com/media/wjK3YnjoQf0go/giphy-downsized.gif');
+
+INSERT INTO `giphy`.`giphydata` (`id`, `user`, `title`, `type`, `url`) VALUES ('JIX9t2j0ZTN9S', 'Lucy', 'funny cat GIF', 'gif', 'https://media2.giphy.com/media/JIX9t2j0ZTN9S/giphy-downsized.gif');
+INSERT INTO `giphy`.`giphydata` (`id`, `user`, `title`, `type`, `url`) VALUES ('vFKqnCdLPNOKc', 'Lucy', 'white cat hello GIF', 'gif', 'https://media1.giphy.com/media/vFKqnCdLPNOKc/giphy-downsized.gif');
+
+
